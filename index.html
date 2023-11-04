@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--  bootstrap.css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <!--  bootstrap.Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <style>
+        /* banner style start here */
+
+        #BannerSection {
+            /* background-image: url(Images/email.jpg);
+            background-position: cover;
+            background-repeat: no-repeat;
+            background-size: auto; */
+        }
+
+        .EmailBlock img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        /* banner style end here */
+
+
+
+
+
+        /* hunting style start here */
+
+        #HuntingSection {
+            padding: 60px 0px;
+        }
+
+        .HuntingBlock h3 {
+            color: red;
+            font-weight: 600;
+
+        }
+
+        .HuntingBlock h5 {
+            padding: 15px 0px;
+            color: rgb(87, 87, 87);
+            font-style: italic;
+        }
+
+        .HuntingBlock p {
+            padding-bottom: 15px;
+            color: rgb(127, 127, 127);
+        }
+
+        .HuntingBlock Button {
+            padding: 10px 25px;
+            border: solid red 1px;
+            border-radius: 10px;
+            color: red;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .FormBlock {
+            width: 350px;
+            height: 400px;
+            background: rgb(194, 45, 78);
+            background: linear-gradient(0deg, rgba(194, 45, 78, 1) 0%, rgba(224, 82, 50, 1) 43%);
+            border-radius: 20px;
+        }
+
+        .FormBlock h5 {
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        .name {
+            width: 250px;
+            height: 35px;
+            background-color: rgba(255, 255, 255, .2);
+            /* border: 2px solid rgba(255, 255, 255, .2); */
+            /* backdrop-filter: blur(20px); */
+            padding: 9px 0px 0px 20px;
+            color: white;
+            border-radius: 5px;
+            margin: 20px 0px 0px 50px;
+
+        }
+
+        .name h6 {
+            font-size: 13px;
+        }
+
+        .FormBlock button {
+            background-color: white;
+            border-radius: 5px;
+            color: red;
+            padding: 8px 15px;
+            font-size: 15px;
+            margin: 20px 0px 0px 100px;
+            border-style: none;
+            font-weight: bold;
+        }
+
+        /* hunting style end here */
+
+
+
+
+
+
+
+        /* Social style Start here */
+
+        #SocialSection {
+            padding-bottom: 60px;
+        }
+
+        .SocialBlock h3 {
+            color: red;
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+
+        .SocialBlock p {
+            color: rgb(127, 127, 127);
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .ImgBlock img {
+            width: 330px;
+            height: 330px;
+            margin: 0px 20px 20px 0px;
+        }
+
+        /* Social style End here */
+
+
+
+
+
+        /* Quality style Start here */
+
+        #QualitySection {
+            padding: 30px 0px 30px;
+            background-image: url(Images/color.jpg);
+            background-position: cover;
+            background-size: cover;
+        }
+
+        .qualityBlock h3 {
+            color: rgb(239, 234, 234);
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .ParaBlock {
+            width: 350px;
+            height: 380px;
+            background-color: antiquewhite;
+            padding: 25px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .ParaBlock-1 {
+            width: 350px;
+            height: 380px;
+            background-color: antiquewhite;
+            padding: 75px 25px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .ParaBlock-2 {
+            width: 350px;
+            height: 380px;
+            background-color: antiquewhite;
+            padding: 70px 25px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+
+        /* Quality style End here */
+
+
+
+
+        /* Deliver style Start here */
+
+        #DeliverSection {
+            padding: 60px 0px;
+        }
+
+        .WeBlock h3 {
+            text-align: center;
+            color: red;
+            font-weight: 600;
+        }
+
+        .WeBlock p {
+            color: rgb(127, 127, 127);
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .MessageBlock img {
+            width: 300px;
+            margin-bottom: 30px;
+        }
+
+        /* Deliver style End here */
+
+
+
+
+
+        /* Dear style Start here */
+        #DearSection {
+            padding-bottom: 20px;
+            background-image: url(Images/color.jpg);
+            background-position: cover;
+            background-size: cover;
+        }
+
+        .DearBlock h3 {
+            text-align: center;
+            color: white;
+            padding: 40px 0px 20px;
+        }
+
+
+        .DearBlock h6 {
+            text-align: center;
+            color: white;
+            padding-bottom: 20px;
+
+        }
+
+        .DearBlock p {
+            text-align: center;
+            color: white;
+
+        }
+
+        /* Dear style End here */
+
+
+
+
+
+        /* Plan style Start here */
+
+        #PlanSection {
+            padding: 60px 0px;
+        }
+
+        .planBlock {
+            width: 270px;
+            height: 350px;
+            text-align: left;
+            background-color: rgb(247, 244, 241);
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .planBlock h6 {
+            padding: 10px 0px;
+            color: red;
+        }
+
+        .planBlock p {
+            color: rgb(127, 127, 127);
+            padding: 0px;
+            text-align: left;
+        }
+
+        /* Plan style End here */
+
+
+
+
+        /* Belive style Start here */
+
+        #BeliveSection {
+            padding-bottom: 60px;
+        }
+
+        .BeliveBlock {
+            text-align: center;
+        }
+
+        .BeliveBlock h5 {
+            padding-bottom: 20px;
+            font-weight: 500;
+            color: rgb(87, 87, 87);
+        }
+
+        .BeliveBlock p {
+            color: rgb(127, 127, 127);
+        }
+
+        /* Belive style End here */
+
+
+
+
+
+        /* Our style Start here */
+
+        #OurSection {
+            padding: 60px 0px 0px;
+            background-image: url(Images/color.jpg);
+            background-position: cover;
+            background-size: cover;
+        }
+
+        .OurBlock h3 {
+            color: white;
+            margin-top: 20px;
+        }
+
+        .OurBlock h5 {
+            color: white;
+            padding: 20px 0px 30px;
+        }
+
+        .OurBlock p {
+            color: white;
+        }
+
+        .OurBlock-1 img {
+            width: 300px;
+            height: 320px;
+        }
+
+        /* Our style End here */
+
+
+
+
+
+        /* Your style Start here */
+
+        #YourSection {
+            padding: 60px 0px;
+        }
+
+        .Optimize h3 {
+            text-align: center;
+            color: red;
+            padding-bottom: 30px;
+
+        }
+
+        .YourBlock {
+            width: 350px;
+            height: 230px;
+            background: #fff;
+            padding: 90px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+        }
+
+        .YourBlock h5 {
+            color: rgb(127, 127, 127);
+            text-align: center;
+        }
+
+        .YourBlock-1 {
+            width: 350px;
+            height: 230px;
+            background-color: rgb(235, 134, 97);
+            padding: 20px 30px 0px 14px;
+            position: relative;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+            /* margin-bottom: 20px; */
+        }
+
+        .YourBlock-2 {
+            width: 350px;
+            height: 230px;
+            background-color: #fff;
+            padding: 90px;
+            font-weight: 500;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+        }
+
+
+
+        .YourBlock-1 p {
+            color: rgb(236, 236, 236);
+            font-size: 13px;
+        }
+
+        .line {
+            width: 5px;
+            height: 200px;
+            background-color: rgb(236, 164, 138);
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            border-radius: 10px;
+        }
+
+        .line-01 {
+            width: 5px;
+            height: 70px;
+            background-color: rgb(239, 221, 214);
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            border-radius: 10px;
+        }
+
+
+        .YourBlock-01 {
+            width: 350px;
+            height: 230px;
+            background-color: #fff;
+            padding: 90px;
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(127, 127, 127);
+            font-weight: 500;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+        }
+
+        .YourBlock-02 {
+            width: 350px;
+            height: 230px;
+            background-color: #fff;
+            padding: 90px 50px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(127, 127, 127);
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+        }
+
+        .YourBlock-03 {
+            width: 350px;
+            height: 230px;
+            background-color: #fff;
+            padding: 90px 50px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(127, 127, 127);
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+        }
+
+        /* Your style End here */
+
+
+
+
+
+
+        /* Get style Start here */
+
+        #GetSection {
+            padding: 50px 0px 40px;
+            background-image: url(Images/color.jpg);
+            background-position: cover;
+            background-size: cover;
+        }
+
+        .GetBolck p {
+            color: white;
+            text-align: center;
+        }
+
+        /* Get style End here */
+
+
+
+
+
+        /* Footer style Start here */
+
+        #FooterSection {
+            padding: 20px 0px 0px;
+            background-color: rgb(34, 34, 34);
+        }
+
+        .is {
+            color: rgb(235, 235, 235);
+            text-align: center;
+            font-weight: 100;
+
+        }
+
+        .is button {
+            background-color: rgb(83, 161, 239);
+            padding: 10px;
+            border-radius: 5px;
+            border-style: none;
+            color: rgb(231, 229, 229);
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .FooterBlock {
+            position: relative;
+        }
+
+        .FooterBlock h5 {
+            color: rgb(235, 235, 235);
+            padding: 40px 0px 10px;
+        }
+
+        .FooterBlock h6 {
+            color: rgb(235, 235, 235);
+            font-size: 14px;
+        }
+
+        .FooterBlock p {
+            color: rgb(235, 235, 235);
+            font-size: 12px;
+        }
+
+        .FooterBlock ul {
+            list-style: none;
+            padding-inline-start: 0;
+        }
+
+        .FooterBlock ul li {
+            color: rgb(235, 235, 235);
+            font-size: 12px;
+            /* list-style: none;
+            padding-inline-start: 0; */
+
+            /* position: absolute; */
+        }
+
+        .line-1 {
+            width: 255px;
+            height: 1px;
+            background-color: antiquewhite;
+            margin-bottom: 10px;
+            /* position: absolute;
+            top: 80px;
+            right: 0px; */
+        }
+
+        /* Footer style End here */
+
+
+
+
+        /* Copy style Start  here */
+
+
+        #CopySection {
+            background-color: black;
+            padding: 10px 0px;
+        }
+
+        .Copy h6 {
+            color: rgb(229, 225, 219);
+            font-weight: lighter;
+            padding: 10px 0px 0px 20px;
+        }
+
+        .Icon {
+            /* padding: 10px 0px 0px 400px; */
+            justify-content: end;
+            padding-left: 20px;
+        }
+
+        .bi-facebook {
+            color: #fff;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .bi-instagram {
+            color: #fff;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .bi-linkedin {
+            color: #fff;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .bi-youtube {
+            color: #fff;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        /* Copy style End here */
+
+
+        .home ul li {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+            <a href="" class="navbar-brand">bud</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="home">
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+
+
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">KNOW US</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">SERVICES</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">WORK</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">CLIENTS</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">DIGITIAL MARKETING</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">SOCIAL MEDIA</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">FILMS</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">CAREERS</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">+ 91 98 86 833138</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <!-- Banner Section Start Here -->
+
+    <section id="BannerSection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="EmailBlock">
+                        <img src="Images/email.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section End Here -->
+
+
+
+
+
+
+    <!-- Hunting Section Start Here -->
+
+    <section id="HuntingSection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-8 col-md-6">
+
+                    <div class="HuntingBlock">
+
+                        <h3>ARE YOU HUNTING FOR A GOOD MARKETING STRATEGY
+                            TO ENGAGE WITH YOUR CLIENTS ACTIVELY?</h3>
+
+                        <h5>Email marketing campaings are the best marketing solutions for you</h5>
+
+                        <p>Optimal email marketing campaigns inspire excitement and curiosity. It creates
+                            meaningful relationships through wonderfully crafted words. Prominent email
+                            marketing companies in India, like BUD, can help you personalize your story. In
+                            other words, we deliver tailored messages straight to your client & inbox. Our email
+                            campaigns convey your company & goals and targets. We resonate with the
+                            recipients, their needs, etc., capturing their attention and inspiring them to act.</p>
+
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="FormBlock">
+                        <h5>GET IN TOUCH WITH US</h5>
+                        <div class="name">
+                            <h6>File Name</h6>
+                        </div>
+                        <div class="name">
+                            <h6>Email Address</h6>
+                        </div>
+                        <div class="name">
+                            <h6>Phone Number</h6>
+                        </div>
+                        <div class="name">
+                            <h6>Company Name</h6>
+                        </div>
+                        <div class="name">
+                            <h6>Website URL</h6>
+                        </div>
+                        <button>Rquest Free Audit</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Hunting Section End Here -->
+
+
+
+
+
+
+    <!-- Social Section Start Here -->
+
+
+    <section id="SocialSection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="ImgBlock">
+
+                        <img src="Images/Group 1621.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-12">
+
+                    <div class="SocialBlock">
+
+                        <h3>IF SOCIAL MEDIA IS FOR REACH, EMAIL MARKETING IS
+                            FOR REVENUE</h3>
+
+                        <p>Imagine a dynamic marketing channel that opens a direct line of
+                            communication between businesses and their valued customers! This is
+                            possible through strategic email marketing campaigns.</p>
+
+                        <p>Bud & email campaigns are highly creative&amp; vibrant channels. We help
+                            you share exciting product launches, exclusive sales offers, and compelling
+                            news with your targeted audience. As a leading email marketing
+                            agency, coupled with our strategic approach, we deliver remarkable ROI.</p>
+
+
+                        <p>Gone are the days when mass mailings were sent out in a scattergun fashion.
+                            Modern email marketing strategy uses the power of consent, segmentation,</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Social Section End Here -->
+
+
+
+
+    <!-- Quality Section Start Here -->
+
+    <section id="QualitySection">
+
+        <div class="container">
+
+            <div class="qualityBlock">
+                <h3>QUALITY VS QUANTITY, WE TRADE OFF THE RIGHT WAY!</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="ParaBlock">
+                        <p>Bud's promotional emails are magic wands for
+                            spreading the right word about your product or
+                            service. They can also communicate special
+                            offers, limited-time deals, or exclusive content.
+                            Bud plans email designs in an appetizing way to
+                            ignite curiosity, create desire, and build bonds
+                            with your targeted audience. For a successful
+                            email marketing strategy, the frequency of
+                            emails needs to be increased to reinforce the
+                            message. According to the
+                            studies, 61% of email subscribers prefer weekly
+                            promotional marketing emails.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="ParaBlock-1">
+
+                        <p>Our informational emails help your targeted
+                            audience gain deeper insights into your
+                            business or brand. Its main aim is to offer
+                            valuable information enriching the receiver&
+                            knowledge. So consistency is the key here.
+                            Bud being a top email marketing company
+                            in India, we plan your email designs so that
+                            your target audiences don't & get bored.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="ParaBlock-2">
+
+                        <p>Re-engagement emails are yet another
+                            important type of email marketing. As the
+                            name implies, these emails assist in
+                            reconnecting with customers or subscribers
+                            who haven't & been active in a while. Bud
+                            plans these email campaigns & times them
+                            for the inactive customers to get back to you.
+                            Our proficient email marketing
+                            services deliver the best results from
+                            your email campaigns. </p>
+                    </div>
+                </div>
+                <!-- 
+                <div class="col">
+                    <div class="Block-1">
+                        <p>Bud's promotional emails are magic wands for
+                            spreading the right word about your product or
+                            service. They can also communicate special
+                            offers, limited-time deals, or exclusive content.
+                            Bud plans email designs in an appetizing way to
+                            ignite curiosity, create desire, and build bonds
+                            with your targeted audience. For a successful
+                            email marketing strategy, the frequency of
+                            emails needs to be increased to reinforce the
+                            message. According to the
+                            studies, 61% of email subscribers prefer weekly
+                            promotional marketing emails.</p>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="Block-2">
+                        <p>Our informational emails help your targeted
+                            audience gain deeper insights into your
+                            business or brand. Its main aim is to offer
+                            valuable information enriching the receiver&
+                            knowledge. So consistency is the key here.
+                            Bud being a top email marketing company
+                            in India, we plan your email designs so that
+                            your target audiences don't & get bored.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div class="Block-3">
+
+                        <p>Re-engagement emails are yet another
+                            important type of email marketing. As the
+                            name implies, these emails assist in
+                            reconnecting with customers or subscribers
+                            who haven't & been active in a while. Bud
+                            plans these email campaigns & times them
+                            for the inactive customers to get back to you.
+                            Our proficient email marketing
+                            services deliver the best results from
+                            your email campaigns.</p>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Quality Section End Here -->
+
+
+
+
+
+
+    <!-- Deliver Section Start Here -->
+
+    <section id="DeliverSection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="WeBlock">
+                        <h3>WE DELIVER THE RIGHT MESSAGE, TO THE RIGHT AUDIENCE, AT THE RIGHT TIME</h3>
+                        <p>Bud plans your email marketing campaigns to offer many advantages benefitting your
+                            business. Studies state that around 83% of consumers engage better through effective email
+                            campaigns. Our holistic email marketing services assure the following benefits:</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-4 col-md-6 col-sm-12">
+
+                    <div class="MessageBlock">
+
+                        <img src="Images/front.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-sm-12">
+
+                    <div class="MessageBlock">
+
+                        <img src="Images/front.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-sm-12">
+
+                    <div class="MessageBlock">
+
+                        <img src="Images/front.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-sm-12">
+
+                    <div class="MessageBlock">
+
+                        <img src="Images/front.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-sm-12">
+
+                    <div class="MessageBlock">
+
+                        <img src="Images/front.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-sm-12">
+
+                    <div class="MessageBlock">
+
+                        <img src="Images/front.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Deliver Section End Here -->
+
+
+
+
+
+
+    <!-- Dear Section Start Here -->
+
+    <section id="DearSection">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="DearBlock">
+                        <h3>DEAR USERS, FIND OUT WHAT MAKES US DIFFERENT</h3>
+
+                        <h6>WE BELIEVE THAT PERSONALIZATION IS NOT ABOUT FIRST/LAST NAMES. IT’S ABOUT RELEVANT CONTENT:
+                        </h6>
+
+                        <p>On the surface, email marketing seems to be an easy task - crafting an attractive mailer and
+                            sending them out to as many contacts
+                            as possible. But when there are a variety of companies across a variety of industries doing
+                            the same, content becomes critical.
+                            Content represents all forms of media including graphics and verbal communication. It needs
+                            to be relevant, fresh, and consistent,
+                            to do so, market research is necessary. It is important to understand fundamental questions
+                            like ‘What fits?’, ‘Where?’ etc.
+                            That’s where the proficiency of Bud, the top email marketing company in India comes into
+                            play. We can deliver exceptional
+                            results to drive your business forward.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dear Section End Here -->
+
+
+
+
+
+
+
+    <!-- Plan Section Start Here -->
+
+
+    <section id="PlanSection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="planBlock">
+                        <img src="Images/task.png" alt="">
+                        <h6>We plan & strategise</h6>
+
+                        <p>On the surface, email marketing seems
+                            to be an easy task - crafting an
+                            attractive mailer and sending them out
+                            to as many contacts as possible. But
+                            when there are a variety of companies
+                            across a variety of industries doing the
+                            same, content becomes
+                            Read more..</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="planBlock">
+                        <img src="Images/illustration.png" alt="">
+                        <h6>We plan & strategise</h6>
+
+                        <p>Good email campaigning begins
+                            with exceptional email design at
+                            Bud email marketing
+                            company in India. Our team of
+                            skilled designers crafts captivating
+                            and immersive email
+                            templates. So you can effortlessly
+                            captivate attention and fuel
+                            Read more..</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="planBlock">
+                        <img src="Images/engineering.png" alt="">
+                        <h6>We plan & strategise</h6>
+
+                        <p>To optimize the potency of your email
+                            campaigns, we harness the power of
+                            cutting-edge marketing
+                            automation tools. These tools
+                            empower us to streamline many
+                            facets of your email
+                            marketing journey. This includes
+                            audience segmentation,
+                            Read more..</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="planBlock">
+                        <img src="Images/funding.png" alt="">
+                        <h6>We plan & strategise</h6>
+
+                        <p>Being India's best email marketing
+                            company, we know the significance of
+                            cost-effectiveness. We provide flexible
+                            pricing choices tailored to businesses of
+                            all scales. We guarantee optimal value
+                            for your investment. Our dedicated
+                            team can deliver top-notch
+                            Read more..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Plan Section End Here -->
+
+
+
+
+
+    <!-- Belive Section Start Here -->
+
+    <section id="BeliveSection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="BeliveBlock">
+                        <h5>WE BELIEVE THAT PERSONALIZATION IS NOT ABOUT FIRST/LAST NAMES. IT’S ABOUT RELEVANT CONTENT
+                        </h5>
+
+                        <p>On the surface, email marketing seems to be an easy task - crafting an attractive mailer and
+                            sending them out to as many contacts
+                            as possible. But when there are a variety of companies across a variety of industries doing
+                            the same, content becomes critical.
+                            Content represents all forms of media including graphics and verbal communication. It needs
+                            to be relevant, fresh, and consistent,
+                            to do so, market research is necessary. It is important to understand fundamental questions
+                            like ‘What fits?’, ‘Where?’ etc.
+                            That’s where the proficiency of Bud, the top email marketing company in India comes into
+                            play. We can deliver exceptional
+                            results to drive your business forward.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Belive Section End Here -->
+
+
+
+
+
+
+    <!-- Our Section Start Here -->
+
+    <Section id="OurSection">
+
+        <div class="container">
+
+            <!-- <img src="Images/color.jpg" alt=""> -->
+
+            <div class="row">
+
+                <div class="col-xl-6 col-md-12">
+
+                    <div class="OurBlock-1">
+                        <img src="Images/Group 1627.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-12">
+
+                    <div class="OurBlock">
+                        <h3>OUR CUTTING-EDGE EMAIL MARKETING CAMPAIGNS</h3>
+                        <h5>Welcome Email Series</h5>
+                        <p>To create a stellar first impression for your new subscribers, Bud offers the
+                            welcome email series. The email campaign design involves sending a series of
+                            emails. These emails introduce your brand, give a warm welcome, and deliver
+                            valuable content. It is also used for enticing incentives to create a bang
+                            opening. Bud can help you captivate your targeted audience through this
+                            email marketing strategy. Bring your brand to life through our
+                            expert email marketing services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!-- Our Section End Here -->
+
+
+
+
+
+    <!-- Your Section Start Here -->
+
+    <section id="YourSection">
+
+        <div class="container">
+
+            <div class="Optimize">
+                <h3>OPTIMIZE YOUR CAMPAIGNS WITH BUD'S EMAIL MARKETING
+                    STRATEGIES</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock">
+
+                        <h5>Building a Quality
+                            Email List</h5>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock-1">
+
+                        <div class="line"></div>
+                        <div class="line-01"></div>
+                        <p>To create a stellar first impression for your new
+                            subscribers, Bud offers the welcome email series.
+                            The email campaign design involves sending a
+                            series of emails. These emails introduce your brand,
+                            give a warm welcome, and deliver valuable content.
+                            It is also used for enticing incentives to create a
+                            bang opening. Bud can help you captivate
+                            your targeted audience through this email
+                            marketing strategy. Bring your brand to life through
+                            our expert email marketing services.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock-2">
+
+                        <h5>Crafting Engaging
+                            Subject Lines</h5>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock-01">
+
+                        <h5>Delivering High-Quality
+                            Content</h5>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock-01">
+
+                        <h5>Optimizing for
+                            Mobile Devices</h5>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock-01">
+
+                        <h5>Compelling
+                            Call-to-Action (CTA)</h5>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock-01">
+
+                        <h5>Experimenting with
+                            A/B Testing</h5>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock-02">
+
+                        <h5>Leveraging Automation
+                            & Drip Campaigns</h5>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="YourBlock-03">
+
+                        <h5>Monitoring &
+                            Analysing Performance</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+
+                <div class="col">
+
+                    <div class="YourBlock-01">
+
+                        <h5>Delivering High-Quality
+                            Content</h5>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div class="YourBlock-01">
+
+                        <h5>Optimizing for
+                            Mobile Devices</h5>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div class="YourBlock-01">
+
+                        <h5>Compelling
+                            Call-to-Action (CTA)</h5>
+                    </div>
+                </div>
+            </div> -->
+
+        <!-- <div class="row">
+
+            <div class="col">
+
+                <div class="YourBlock-01">
+
+                    <h5>Experimenting with
+                        A/B Testing</h5>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="YourBlock-02">
+
+                    <h5>Leveraging Automation
+                        & Drip Campaigns</h5>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="YourBlock-03">
+
+                    <h5>Monitoring &
+                        Analysing Performance</h5>
+                </div>
+            </div>
+        </div> -->
+
+        </div>
+    </section>
+
+
+    <!-- Your Section End Here -->
+
+
+
+
+
+
+    <!-- Get Section Start Here -->
+
+    <section id="GetSection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="GetBolck">
+                        <p>Get ready for a world of infinite possibilities. Unleash the potential of emailmarketing with
+                            India's best email marketing company. We
+                            tap into tech-charged minds with creative strategists. That's how we have evolved as an
+                            innovative digital marketing
+                            agency in Bangalore. Email marketing is one of the many automation tools vital for a
+                            holistic marketing campaign design. We
+                            understand the importance of what to say and how to say it!
+                            Onboard Bud is India's best email marketing company to experience
+                            data-drivendecision-making. Boost your
+                            email marketing automation efforts throughstrategic campaign design & implementation. Unlock
+                            smart email marketing
+                            automation tools for cost-effective solutions. Give your brand wings to soar high in the
+                            online & offline world.
+                            Bud is one of the top email marketing agencies because we integrate social media marketing,
+                            SEO, PPC Advertising, content & email
+                            marketing. Outsmart competition with our 360-degree branding services &; advertising
+                            campaigns and enjoy assured ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Section End Here -->
+
+
+
+
+
+
+
+    <!-- Footer Section Start Here -->
+
+    <section id="FooterSection">
+
+        <div class="container">
+
+            <div class="is">
+
+                <h5>Is there something you want discuss with us?</h5>
+
+                <button>LEAVE A MESSAGE</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="FooterBlock">
+                        <h5>Brand Management</h5>
+
+                        <div class="line-1"></div>
+
+                        <p>
+                            Brand identifycreation, brand positioning strategy, brand story, brand stone,key messaging,
+                            brand architecture, brand communication design, brand promotion, value proposition, brand
+                            name, tagline, logo design, brand design,digitial foot print, brand guideline, marketing and
+                            communications, measurements.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="FooterBlock">
+                        <h5>Creative Service</h5>
+
+                        <div class="line-1"></div>
+
+                        <p>Logo Designers Bangalore </p>
+
+                        <p>Brand name, tagline, logo design, brouchure design,leaflet, flier design, pamplet design,
+                            business car design, letter head design, newspaper advertisement design, booklet design,
+                            poster design, hoarding design, kisok design, men card design, standee design, newsletter
+                            design, powerpoint design, indoor,Read More... </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="FooterBlock">
+                        <h5>Digitial Marketing</h5>
+
+                        <div class="line-1"></div>
+
+                        <ul>
+                            <li>SEO Services</li>
+                            <li>Social Media Marketing</li>
+                            <li>PPC Advertising</li>
+                            <li>Content & Email Marketing</li>
+                            <li>Blog</li>
+                        </ul>
+
+                        <p>Website design & Development Ecomerce website development Worldpress develpnment
+                            Domain/Hosting & Server manangement</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="FooterBlock">
+                        <h5>Get in touch with us</h5>
+
+                        <div class="line-1"></div>
+
+                        <h6>Bud Creative Ad Agency</h6>
+
+                        <ul>
+
+                            <li>NO.4C-303,2nd Floor,</li>
+                            <li>OMBR Layout Main
+                                Road,(Close to kasthurinagar, indhiranagar.)</li>
+                            <li>Bangalore-560 043.</li>
+                        </ul>
+
+                        <ul>
+                            <li>Mobile: + 91 98 86 833138</li>
+                            <li>email:manoj@budindia.com</li>
+                        </ul>
+
+                        <h6>Australia Representative</h6>
+
+                        <ul>
+                            <li>No 18 Turin street, REDBANK,</li>
+                            <li>Qld 4301, Australia.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer Section End Here -->
+
+
+
+
+
+
+    <!-- Copy Section Start Here -->
+
+
+    <section id="CopySection">
+
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="col-md-9 col-sm-12">
+
+                    <div class="Copy">
+
+                        <h6>Copyright Budindia 2023</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <div class="Icon">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Copy Section End Here -->
+
+
+
+
+
+    <!-- bootstrap.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

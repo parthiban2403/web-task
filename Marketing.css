@@ -1,0 +1,8 @@
+#Banner Section {
+    background-image: url(Images/email.jpg);
+}
+
+#Banner Section h1 {
+    font-size: 25px;
+    color: aqua;
+}
